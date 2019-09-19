@@ -4,21 +4,22 @@ variable "s3_bucket_name" {
 }
 
 variable "s3_key_prefix" {
-  default = ""
+  default     = ""
   description = "(Optional) To write output to a sub-folder, enter a sub-folder name."
 }
 
 variable "s3_encryption_enabled" {
-  default = true
+  default     = true
   description = "(Optional) Encrypt log data."
 }
 
 variable "cloudwatch_log_group_name" {
-  default = ""
+  default     = ""
   description = "(Optional) The name of the log group to upload session logs to. Specifying this enables sending session output to CloudWatch Logs."
 }
 
 variable "cloudwatch_encryption_enabled" {
-  default = true
+  default     = true
   description = "(Optional) Encrypt log data."
 }
+
