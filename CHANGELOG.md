@@ -1,7 +1,8 @@
 <a name="v2.0.0"></a>
 ## [v2.0.0] - 2019-09-20
 
-- Add CHANGELOG
+- Tidy README.md
+- Add CHANGELOG.md
 - Upgrade module to support Terraform 0.12 ([#2](https://github.com/gazoakley/terraform-aws-session-manager-settings/pull/2))
 
 

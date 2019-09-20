@@ -1,6 +1,6 @@
 # terraform-aws-session-manager-settings
 
-This module creates an SSM document that stores preferences for session manager.
+This module creates an SSM document that stores preferences for AWS Systems Manager Session Manager.
 
 Session preferences let you specify a location to store log output for all sessions in your account. You can also enable server-side encryption using an AWS Key Management Service (KMS) key for a specified stream to ensure your session records are transferred securely.
 
@@ -30,7 +30,7 @@ The following arguments are supported:
 ## Outputs
 
 * `document_name` - Name of the created document.
-* `document_arn` - ARN of the created document. You can use this to create IAM policies that prevent changes to session manager preferences.
+* `document_arn` - ARN of the created document. You can use this to create IAM policies that prevent changes to Session Manager preferences.
 
 ## License
 
