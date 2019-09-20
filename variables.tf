@@ -22,4 +22,3 @@ variable "cloudwatch_encryption_enabled" {
   default     = true
   description = "(Optional) Encrypt log data."
 }
-

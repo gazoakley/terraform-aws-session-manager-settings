@@ -1,7 +1,3 @@
-provider "aws" {
-  version = ">= 1.36.0"
-}
-
 resource "aws_ssm_document" "session_manager_prefs" {
   name            = "SSM-SessionManagerRunShell"
   document_type   = "Session"
@@ -21,6 +17,4 @@ resource "aws_ssm_document" "session_manager_prefs" {
     }
 }
 DOC
-
 }
-
