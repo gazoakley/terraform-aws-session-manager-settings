@@ -1,9 +1,5 @@
-terraform {
-  required_version = ">= 0.11"
-
-  required_providers {
-    aws = ">= 1.36.0"
-  }
+provider "aws" {
+  version = ">= 1.36.0"
 }
 
 resource "aws_ssm_document" "session_manager_prefs" {
@@ -25,4 +21,6 @@ resource "aws_ssm_document" "session_manager_prefs" {
     }
 }
 DOC
+
 }
+
