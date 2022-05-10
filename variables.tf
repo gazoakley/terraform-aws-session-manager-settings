@@ -14,6 +14,7 @@ variable "s3_key_prefix" {
 }
 
 variable "s3_encryption_enabled" {
+  type        = bool
   default     = true
   description = "(Optional) Encrypt log data."
 }
@@ -24,6 +25,13 @@ variable "cloudwatch_log_group_name" {
 }
 
 variable "cloudwatch_encryption_enabled" {
+  type        = bool
   default     = true
   description = "(Optional) Encrypt log data."
+}
+
+variable "cloudwatch_streaming_enabled" {
+  type        = bool
+  default     = true
+  description = "(Optional) Stream session log data to CloudWatch. Defaults to true. If false logs will be uploaded at the end of the session."
 }

@@ -14,6 +14,7 @@ resource "aws_ssm_document" "session_manager_prefs" {
       s3EncryptionEnabled         = var.s3_encryption_enabled,
       cloudWatchLogGroupName      = var.cloudwatch_log_group_name,
       cloudWatchEncryptionEnabled = var.cloudwatch_encryption_enabled
+      cloudWatchStreamingEnabled  = var.cloudwatch_streaming_enabled
     }
   })
 }
