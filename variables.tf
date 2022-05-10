@@ -1,3 +1,8 @@
+variable "kms_key_id" {
+  default     = null
+  description = "(Optional) The KMS key used to to encrypt SSM sessions"
+}
+
 variable "s3_bucket_name" {
   default     = ""
   description = "(Optional) The name of bucket to store session logs. Specifying this enables writing session output to an Amazon S3 bucket."
