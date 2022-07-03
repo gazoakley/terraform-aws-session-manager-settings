@@ -1,3 +1,9 @@
+<a name="v2.1.0"></a>
+## [v2.1.0] - 2022-06-03
+
+- Add various new Session Manager options
+
+
 <a name="v2.0.0"></a>
 ## [v2.0.0] - 2019-09-20
 
