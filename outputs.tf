@@ -4,6 +4,6 @@ output "document_name" {
 }
 
 output "document_arn" {
-  description = "ARN of the created document. You can use this to create IAM policies that prevent changes to session manager preferences."
+  description = "ARN of the created document. You can use this to create IAM policies that prevent changes to Session Manager preferences."
   value       = aws_ssm_document.session_manager_prefs.arn
 }
