@@ -1,3 +1,9 @@
+variable "ssm_document_name" {
+  type        = string
+  default     = "SSM-SessionManagerRunShell"
+  description = "The name for SSM Document"
+}
+
 variable "kms_key_id" {
   type        = string
   default     = null
