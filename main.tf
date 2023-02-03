@@ -1,5 +1,5 @@
 resource "aws_ssm_document" "session_manager_prefs" {
-  name            = "SSM-SessionManagerRunShell"
+  name            = var.ssm_document_name 
   document_type   = "Session"
   document_format = "JSON"
 

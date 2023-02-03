@@ -47,6 +47,7 @@ module "session-manager-settings" {
 | s3\_encryption\_enabled | Encrypt log data. | `bool` | `true` | no |
 | s3\_key\_prefix | To write output to a sub-folder, enter a sub-folder name. | `string` | `""` | no |
 | windows\_shell\_profile | A set of Windows commands to run when a Windows session is started. | `string` | `""` | no |
+| ssm\_document\_name | The name of SSM Document that will be created on AWS Account. | `string` | `"SSM-SessionManagerRunShell"` | no |
 
 ## Outputs
 
