@@ -47,8 +47,8 @@ variable "cloudwatch_streaming_enabled" {
 }
 
 variable "idle_session_timeout" {
-  type        = number
-  default     = 20
+  type        = string
+  default     = "20"
   description = "Time until a session is closed when left idle."
 }
 

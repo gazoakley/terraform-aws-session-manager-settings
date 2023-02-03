@@ -38,7 +38,7 @@ module "session-manager-settings" {
 | cloudwatch\_encryption\_enabled | Encrypt log data. | `bool` | `true` | no |
 | cloudwatch\_log\_group\_name | The name of the log group to upload session logs to. Specifying this enables sending session output to CloudWatch Logs. | `string` | `""` | no |
 | cloudwatch\_streaming\_enabled | Stream session log data to CloudWatch. Defaults to true. If false logs will be uploaded at the end of the session. | `bool` | `true` | no |
-| idle\_session\_timeout | Time until a session is closed when left idle. | `number` | `20` | no |
+| idle\_session\_timeout | Time until a session is closed when left idle. | `string` | `"20"` | no |
 | kms\_key\_id | The KMS key used to to encrypt SSM sessions. | `string` | `null` | no |
 | linux\_shell\_profile | A set of Linux commands to run when a Linux session is started. | `string` | `""` | no |
 | max\_session\_duration | The longest a session can stay open before it will be closed. | `number` | `null` | no |
