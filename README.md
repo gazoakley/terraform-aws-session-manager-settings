@@ -10,7 +10,7 @@ Requires `aws` provider >= 1.36.0
 
 ```hcl
 module "session-manager-settings" {
-  source  = "darkscreenio/session-manager-settings/aws"
+  source  = "gazoakley/session-manager-settings/aws"
 
   s3_bucket_name            = "my-session-logs-bucket"
   cloudwatch_log_group_name = "/ssm/session-logs"
